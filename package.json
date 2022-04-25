@@ -1,0 +1,9 @@
+{
+  "name": "krayt-test",
+  "version": "1.0.0",
+  "description": "test landing",
+  "main": "index.js",
+  "repository": "https://github.com/Kosatos/krayt-test.git",
+  "author": "Konstantin Muzyka <kosatkinms@mail.ru>",
+  "license": "MIT"
+}

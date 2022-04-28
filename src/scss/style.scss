@@ -1,0 +1,111 @@
+@import 'null';
+@import 'fonts';
+
+$fontFamily: "Lato", sans-serif;
+$primaryColor: #10375C;
+$secondaryColor: #FF5722;
+$blackColor: #222831;
+$greyColor: #9A9A9A;
+
+
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1170px;
+
+body {
+	min-width: $minWidth;
+	max-width: $maxWidth;
+
+	font-family: 'Lato';
+	font-size: 16px;
+	font-weight: 400;
+	color: $primaryColor;
+}
+
+.container {
+	max-width: $maxWidthContainer;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+// HEADER //
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+	padding-top: 60px;
+
+	&__logo {
+		font-family: 'Playfair Display';
+		font-size: 24px;
+
+		&:visited {
+			color: $primaryColor;
+		}
+	}
+
+	&__nav {
+		font-weight: 700;
+		color: $blackColor;
+	}
+
+	.nav-header {
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			column-gap: 40px;
+			row-gap: 10px;
+		}
+	
+		&__link {
+			&:hover {
+				color: $secondaryColor;
+			}
+		}
+	}
+
+	&__controllers {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn {
+		height: 43px;
+		padding: 12px 24px;
+		font-family: inherit;
+		font-weight: 700;
+		transition: all .2 ease;
+	}
+
+	.log-in-btn {
+		width: 92px;
+		background-color: transparent;
+		color: $secondaryColor;
+
+		&:hover {
+			color: rgba(255, 87, 36, 0.8);
+		}
+	}
+	.sign-up-btn {
+		width: 103px;
+		color: #fff;
+		background-color: $secondaryColor;
+		box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+
+		&:hover {
+			background-color: rgba(255, 87, 36, 0.8);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

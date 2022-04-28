@@ -49,9 +49,9 @@
 
 		<section class="hero container">
 			<h2 class="section-intro">Introducing</h2>
-			<div class="section-content">
+			<div class="hero__header">
 				<h3 class="section-title">
-					<span>Revolutionary</span> co-working space to realize your innovation
+					<b>Revolutionary</b> co-working space to realize your innovation
 				</h3>
 				<p class="section-text">
 					In&nbsp;frispes, we&nbsp;spearhead new initiatives and provide mentorship to&nbsp;a&nbsp;new
@@ -82,8 +82,22 @@
 					or&nbsp;personally
 				</p>
 				<div class="spaces__nav slider-controllers">
-					<div class="slider-controllers__arrow arrow-left"></div>
-					<div class="slider-controllers__arrow arrow-right"></div>
+					<div class="slider-controllers__arrow arrow-prev">
+						<svg width="53" height="27" viewBox="0 0 54 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z" />
+							<rect width="50" height="4.00159" rx="2.00079"
+								transform="matrix(-1 0 0 1 52.6855 11.5194)" />
+						</svg>
+					</div>
+					<div class="slider-controllers__arrow arrow-next">
+						<svg width="53" height="27" viewBox="0 0 54 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z" />
+							<rect width="50" height="4.00159" rx="2.00079"
+								transform="matrix(-1 0 0 1 52.6855 11.5194)" />
+						</svg>
+					</div>
 				</div>
 			</div>
 			<div class="spaces__slider slider-spaces">
@@ -95,8 +109,8 @@
 						</div>
 						<h4 class="card-spaces__title">Working with team</h4>
 					</div>
-					<div class="card-spaces">
-						<div class="card-spaces__content private-card">
+					<div class="card-spaces private-card">
+						<div class="card-spaces__content private-card__content">
 							<h4 class="private-card__title">Private Space</h4>
 							<p class="card-spaces__text">Comfortable space, Full speed wifi, Free coffe
 								&amp;&nbsp;Snack
@@ -112,7 +126,7 @@
 						</div>
 						<h4 class="card-spaces__title">Custom Office</h4>
 					</div>
-					<div class="card-spaces">
+					<!-- <div class="card-spaces">
 						<div class="card-spaces__content private-card">
 							<h4 class="private-card__title">Private Space</h4>
 							<p class="card-spaces__text">Comfortable space, Full speed wifi, Free coffe
@@ -121,11 +135,16 @@
 							</p>
 							<div class="check-avaibility-btn">></div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="slider-spaces__nav nav-slider">
-					<div class="nav-slider__dots"></div>
-					<span class="nav-slider__counter"><b class="nav-slider__current">01</b> / 04</span>
+					<div class="nav-slider__dots">
+						<div class="nav-slider__dot"></div>
+						<div class="nav-slider__dot"></div>
+						<div class="nav-slider__dot"></div>
+						<div class="nav-slider__dot"></div>
+					</div>
+					<span class="nav-slider__counter"><b class="nav-slider__current">01 /</b> 04</span>
 				</div>
 			</div>
 		</section>
@@ -142,20 +161,6 @@
 					</div>
 				</li>
 				<li class="whyfrispes__benefit benefit">
-					<img src="/src/img/svg/countries.svg" alt="Countries" class="benefit__icon">
-					<div class="benefit__content">
-						<span class="benefit__value">60+</span>
-						<h5 class="benefit__title">Countries</h5>
-					</div>
-				</li>
-				<li class="whyfrispes__benefit benefit">
-					<img src="/src/img/svg/mentor.svg" alt="Startup mentors" class="benefit__icon">
-					<div class="benefit__content">
-						<span class="benefit__value">5K+</span>
-						<h5 class="benefit__title">Startup mentors</h5>
-					</div>
-				</li>
-				<li class="whyfrispes__benefit benefit">
 					<img src="/src/img/svg/spaces.svg" alt="Event spaces" class="benefit__icon">
 					<div class="benefit__content">
 						<span class="benefit__value">100+</span>
@@ -163,10 +168,24 @@
 					</div>
 				</li>
 				<li class="whyfrispes__benefit benefit">
+					<img src="/src/img/svg/countries.svg" alt="Countries" class="benefit__icon">
+					<div class="benefit__content">
+						<span class="benefit__value">60+</span>
+						<h5 class="benefit__title">Countries</h5>
+					</div>
+				</li>
+				<li class="whyfrispes__benefit benefit">
 					<img src="/src/img/svg/wifi.svg" alt="Internet speed" class="benefit__icon">
 					<div class="benefit__content">
 						<span class="benefit__value">500 Mbps</span>
 						<h5 class="benefit__title">Internet speed</h5>
+					</div>
+				</li>
+				<li class="whyfrispes__benefit benefit">
+					<img src="/src/img/svg/mentor.svg" alt="Startup mentors" class="benefit__icon">
+					<div class="benefit__content">
+						<span class="benefit__value">5K+</span>
+						<h5 class="benefit__title">Startup mentors</h5>
 					</div>
 				</li>
 				<li class="whyfrispes__benefit benefit">

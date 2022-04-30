@@ -1,31 +1,27 @@
 @import 'fonts';
 
 $fontFamily: "Lato", sans-serif;
-$primaryColor: #10375C;
-$secondaryColor: #FF5722;
+$primaryColor: #10375c;
+$secondaryColor: #ff5722;
 $blackColor: #222831;
-$greyColor: #9A9A9A;
+$greyColor: #9a9a9a;
 
 
 $minWidth: 320px;
-$maxWidth: 1920px;
-$maxWidthContainer: 1170px;
+$maxWidth: 1440;
+$maxWidthContainer: 1140;
 
 @import 'null';
 
 body {
-	min-width: $minWidth;
-	max-width: $maxWidth;
-
-	font-family: 'Lato';
 	font-size: 16px;
 	font-weight: 400;
 	color: $primaryColor;
 }
 
 .container {
-	max-width: $maxWidthContainer;
-	padding: 0 30px;
+	max-width: $maxWidthContainer + px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -210,7 +206,6 @@ body {
 		display: flex;
 		justify-content: end;
 		align-items: end;
-		width: 152px;
 		column-gap: 23px;
 	}
 
@@ -220,23 +215,48 @@ body {
 }
 
 .slider-controllers {
+	display: flex;
+	justify-content: space-between;
+	width: 170px;
+	height: 54px;
 
 	&__arrow {
-		cursor: pointer;
-		svg {
-			fill: $greyColor;
+		display: flex;
+		align-items: end;
+		height: 100%;
+	}
+}
+.arrow-left {
+	justify-content: start;
+}
 
-			&:hover {
-				fill: $secondaryColor;
-			}
-		}
+.arrow {
+	cursor: pointer;
+	position: relative;
+	fill: $greyColor;
+	transition: all .2s ease;
+	width: 51px;
+
+	&:hover {
+		fill: $secondaryColor;
+		width: 90px;
+
 	}
 
-	.arrow-prev {
+	&__line {
+		width: inherit;
+		fill: inherit;
+		margin-bottom: 11px;
 	}
-	.arrow-next {
-		transform: rotate(180deg);
+
+	&__body {
+		fill: inherit;
+		position: absolute;
 	}
+}
+
+.arrow-right {
+	justify-content: end;
 }
 
 .slider-spaces {
@@ -253,14 +273,15 @@ body {
 .card-spaces {
 	flex: 1;
 	height: 468px;
+	position: relative;
 
 	&__content {
-		position: relative;
 		color: #fff;
 	}
 
 	&__img {
 		width: 100%;
+		height: 420px;
 		object-fit: cover;
 	}
 
@@ -279,26 +300,85 @@ body {
 		text-align: center;
 		margin-top: 14px;
 	}
+
+	&:hover {
+		.main-content {
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+		}
+		.private-card {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+		.check-avaibility-btn {
+			bottom: 0;
+		}
+	}
 }
 .check-avaibility-btn {
 	position: absolute;
 	left: 0;
-	bottom: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	bottom: 48px;
 	color: #fff;
+	font-weight: 700;
+	font-size: 0;
+	line-height: 0;
+	text-align: left;
 	width: 72px;
 	height: 72px;
 	background-color: $secondaryColor;
+	transition: all .2s ease;
+
+	&::after {
+		content: '';
+		width: 10px;
+		height: 16px;
+		position: absolute;
+		top: 29px;
+		right: 32px;
+		background-image: url(../img/svg/chevron-right.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	&:hover {
+		width: 255px;
+		padding: 25px 54px;
+		font-size: 18px;
+		line-height: 1.2em;
+	}
+}
+
+.main-content {
+	opacity: 1;
+	transition: all .3s ease;
 }
 
 .private-card {
 	background-color: $primaryColor;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all .3s ease;
+
+	&:after {
+		content: '';
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		background-image: url(../img/svg/mask-group.svg);
+		right: 16px;
+		top: 16px;
+	}
 	
 	&__content {
 		height: 100%;
-		padding: 0px 41px 72px;
+		padding: 144px 41px 184px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

@@ -75,19 +75,18 @@
 		<!-- /.hero -->
 
 		<section class="spaces container">
-			<div class="spaces__header">
-				<h3 class="section-title">Our Spaces</h3>
-				<p class="section-text">
-					Our space is&nbsp;designed to&nbsp;give you a&nbsp;different experience when working with your team
-					or&nbsp;personally
-				</p>
+			<div class="spaces__header header-spaces">
+				<div class="header-spaces__main">
+					<h3 class="section-title">Our Spaces</h3>
+					<p class="section-text">
+						Our space is&nbsp;designed to&nbsp;give you a&nbsp;different experience when working with your
+						team
+						or&nbsp;personally
+					</p>
+				</div>
 				<div class="spaces__nav slider-controllers">
 					<div class="slider-controllers__arrow arrow arrow-left">
-						<svg class="arrow__line" width="51" height="5" viewBox="0 0 51 5" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<rect width="50" height="4.00159" rx="2.00079"
-								transform="matrix(-1 0 0 1 50.6855 0.519409)" />
-						</svg>
+						<span class="arrow__line"></span>
 						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -96,11 +95,7 @@
 						</svg>
 					</div>
 					<div class="slider-controllers__arrow arrow arrow-right">
-						<svg class="arrow__line" width="51" height="5" viewBox="0 0 51 5" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<rect width="50" height="4.00159" rx="2.00079"
-								transform="matrix(-1 0 0 1 50.6855 0.519409)" />
-						</svg>
+						<span class="arrow__line"></span>
 						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -171,7 +166,6 @@
 					<div class="nav-slider__dot"></div>
 				</div>
 				<span class="nav-slider__counter"><b class="nav-slider__current">01 /</b> 04</span>
-			</div>
 			</div>
 		</section>
 
@@ -269,14 +263,31 @@
 		<!-- /.facilities -->
 
 		<section class="gallary">
-			<div class="gallery__header container">
-				<h3 class="section-title">Frispes gallery</h3>
-				<p class="section-text">
-					Immersive beautiful co-working space gallery
-				</p>
-				<div class="gallery__nav slider-controllers">
-					<div class="slider-controllers__arrow arrow-left"></div>
-					<div class="slider-controllers__arrow arrow-right"></div>
+			<div class="gallery__header header-gallery container">
+				<div class="header-gallery__container">
+					<h2 class="section-intro">Frispes gallery</h2>
+					<h3 class="section-title">
+						Immersive beautiful<br> co-working space gallery
+					</h3>
+					<div class="gallery__nav slider-controllers">
+						<div class="slider-controllers__arrow arrow arrow-left">
+							<span class="arrow__line"></span>
+							<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z"
+									\ />
+							</svg>
+						</div>
+						<div class="slider-controllers__arrow arrow arrow-right">
+							<span class="arrow__line"></span>
+							<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.2371 14.7981L19.033 25.9884C18.7373 26.3465 18.3677 26.5255 17.998 26.5255C17.6284 26.5255 17.2587 26.3465 16.963 25.9884C16.3716 25.2722 16.3716 24.1532 16.963 23.437L23.6536 15.2905H2.06646C1.25325 15.2905 0.587891 14.4848 0.587891 13.5001C0.587891 12.5153 1.25325 11.7096 2.06646 11.7096H23.6536L16.963 3.56312C16.3716 2.84695 16.3716 1.72792 16.963 1.01174C17.5545 0.295565 18.4786 0.295565 19.07 1.01174L28.2741 12.202C28.8286 12.9629 28.8285 14.1267 28.2371 14.7981Z" />
+							</svg>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="gallery__slider slider-gallery">
@@ -290,27 +301,44 @@
 		<!-- /.gallary -->
 
 		<section class="whouse">
-			<h3 class="section-title">Who uses Frispes?</h3>
-			<h4 class="section-subtitle">Big brands, small bussiness, new startuo and inividuals</h4>
+			<div class="whouse__header container">
+				<h3 class="section-title">Who uses Frispes?</h3>
+				<p class="section-text">Big brands, small bussiness, new startuo and inividuals</p>
+			</div>
 			<div class="whouse__users">
-				<img src="img/user1.png" alt="Google logo" class="whouse__user">
-				<img src="img/user2.png" alt="Tokopedia logo" class="whouse__user">
-				<img src="img/user3.png" alt="Upwork logo" class="whouse__user">
-				<img src="img/user4.png" alt="Microsoft logo" class="whouse__user">
-				<img src="img/user5.png" alt="Shopify logo" class="whouse__user">
-				<img src="img/user6.png" alt="Stripe logo" class="whouse__user">
+				<img src="img/svg/user-logo1.svg" alt="Google logo" class="whouse__user">
+				<img src="img/svg/user-logo2.svg" alt="Tokopedia logo" class="whouse__user">
+				<img src="img/svg/user-logo3.svg" alt="Upwork logo" class="whouse__user">
+				<img src="img/svg/user-logo4.svg" alt="Microsoft logo" class="whouse__user">
+				<img src="img/svg/user-logo5.svg" alt="Shopify logo" class="whouse__user">
+				<img src="img/svg/user-logo6.svg" alt="Stripe logo" class="whouse__user">
 			</div>
 		</section>
 
 		<!-- /.whouse -->
 
 		<section class="reviews container">
-			<h2 class="section-intro">Our Facilities</h2>
+			<h2 class="section-intro">Reviews</h2>
 			<div class="reviews__header">
-				<h3 class="section-title">All facilities are designed to meet all your needs</h3>
-				<div class="gallery__nav slider-controllers">
-					<div class="slider-controllers__arrow arrow-left"></div>
-					<div class="slider-controllers__arrow arrow-right"></div>
+				<h3 class="section-title">What our customers are saying</h3>
+				<div class="reviews__nav slider-controllers">
+					<div class="slider-controllers__arrow arrow arrow-left">
+						<span class="arrow__line"></span>
+						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z"
+								\ />
+						</svg>
+					</div>
+					<div class="slider-controllers__arrow arrow arrow-right">
+						<span class="arrow__line"></span>
+						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M28.2371 14.7981L19.033 25.9884C18.7373 26.3465 18.3677 26.5255 17.998 26.5255C17.6284 26.5255 17.2587 26.3465 16.963 25.9884C16.3716 25.2722 16.3716 24.1532 16.963 23.437L23.6536 15.2905H2.06646C1.25325 15.2905 0.587891 14.4848 0.587891 13.5001C0.587891 12.5153 1.25325 11.7096 2.06646 11.7096H23.6536L16.963 3.56312C16.3716 2.84695 16.3716 1.72792 16.963 1.01174C17.5545 0.295565 18.4786 0.295565 19.07 1.01174L28.2741 12.202C28.8286 12.9629 28.8285 14.1267 28.2371 14.7981Z" />
+						</svg>
+					</div>
 				</div>
 			</div>
 			<div class="reviews__slider slider-reviews">
@@ -358,8 +386,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="slider-reviews__nav">
-					----
+				<div class="slider-reviews__nav nav-slider">
+					<div class="nav-slider__dots">
+						<div class="nav-slider__dot"></div>
+						<div class="nav-slider__dot"></div>
+						<div class="nav-slider__dot"></div>
+						<div class="nav-slider__dot"></div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -371,70 +404,113 @@
 			<div class="questions__cards">
 				<div class="questions__card card-question">
 					<span class="card-question__text">How do I know if a space is available?</span>
-					<div class="card-question__badge">^</div>
+					<div class="card-question__badge badge">
+						<svg class="badge__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M8.00664 9.53322C7.71331 9.53322 7.44664 9.42655 7.2333 9.21321L0.566638 2.27988C0.166638 1.85321 0.166632 1.18655 0.593298 0.759884C1.01997 0.359884 1.68665 0.359885 2.11332 0.786552L8.00664 6.91989L13.9 0.786553C14.3 0.359886 14.9933 0.359884 15.42 0.759884C15.8467 1.15988 15.8466 1.85321 15.4466 2.27988L8.77998 9.21321C8.56665 9.42655 8.29998 9.53322 8.00664 9.53322Z" />
+						</svg>
+					</div>
 				</div>
 				<div class="questions__card card-question">
 					<span class="card-question__text">How do i book a space?</span>
-					<div class="card-question__badge">^</div>
+					<div class="card-question__badge badge">
+						<svg class="badge__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M8.00664 9.53322C7.71331 9.53322 7.44664 9.42655 7.2333 9.21321L0.566638 2.27988C0.166638 1.85321 0.166632 1.18655 0.593298 0.759884C1.01997 0.359884 1.68665 0.359885 2.11332 0.786552L8.00664 6.91989L13.9 0.786553C14.3 0.359886 14.9933 0.359884 15.42 0.759884C15.8467 1.15988 15.8466 1.85321 15.4466 2.27988L8.77998 9.21321C8.56665 9.42655 8.29998 9.53322 8.00664 9.53322Z" />
+						</svg>
+					</div>
 				</div>
 				<div class="questions__card card-question">
 					<span class="card-question__text">How do reviews work?</span>
-					<div class="card-question__badge">^</div>
+					<div class="card-question__badge badge">
+						<svg class="badge__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M8.00664 9.53322C7.71331 9.53322 7.44664 9.42655 7.2333 9.21321L0.566638 2.27988C0.166638 1.85321 0.166632 1.18655 0.593298 0.759884C1.01997 0.359884 1.68665 0.359885 2.11332 0.786552L8.00664 6.91989L13.9 0.786553C14.3 0.359886 14.9933 0.359884 15.42 0.759884C15.8467 1.15988 15.8466 1.85321 15.4466 2.27988L8.77998 9.21321C8.56665 9.42655 8.29998 9.53322 8.00664 9.53322Z" />
+						</svg>
+					</div>
 				</div>
 			</div>
-			<a href="#" class="show-more-link">More questions</a>
+			<a href="#" class="show-more-link">
+				<span class="show-more-link__text">More questions</span>
+				<svg class="show-more-link__arrow" width="10" height="16" viewBox="0 0 10 16" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M9.53322 7.99333C9.53322 8.28667 9.42655 8.55334 9.21321 8.76667L2.27988 15.4333C1.85321 15.8333 1.18655 15.8333 0.759884 15.4067C0.359884 14.98 0.359885 14.3133 0.786552 13.8867L6.91989 7.99333L0.786552 2.09997C0.359885 1.69997 0.359884 1.00665 0.759884 0.579985C1.15988 0.153319 1.85321 0.153358 2.27988 0.553358L9.21321 7.21999C9.42655 7.43333 9.53322 7.7 9.53322 7.99333Z" />
+				</svg>
+			</a>
 		</section>
 
 		<!-- /.questions -->
 
-		<section class="news">
-			<div class="news__header">
-				<h3 class="section-title">News, events and insights for you</h3>
-				<a href="#" class="show-more-link">See more</a>
-			</div>
-			<div class="news__cards">
-				<div class="news__card card-primary">
-					<img src="img/news1.jpg" alt="" class="card-primary__img">
-					<div class="card-primary__content">
-						<h5 class="card-primary__title">
-							Google I / O 2020 news update
-						</h5>
-						<p class="card-primary__text">Out of&nbsp;concern for the health and safety of&nbsp;our
-							developers,
-							employees, and local communities&nbsp;&mdash; and in&nbsp;line with recent ...</p>
-						<div class="card-primary__author card-author">
-							<img src="img/review3.png" alt="" class="card-author__avatar">
-							<div class="card-author__info">
-								<span class="card-author__name">Sundar Pichai</span>
-								<span class="card-author__speciality">CEO at Google</span>
+		<div class="grey-background-box">
+			<section class="news container">
+				<div class="news__header">
+					<h3 class="section-title">News, events and insights for you</h3>
+					<a href="#" class="show-more-link">
+						<span class="show-more-link__text">See more</span>
+						<svg class="show-more-link__arrow" width="10" height="16" viewBox="0 0 10 16" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.53322 7.99333C9.53322 8.28667 9.42655 8.55334 9.21321 8.76667L2.27988 15.4333C1.85321 15.8333 1.18655 15.8333 0.759884 15.4067C0.359884 14.98 0.359885 14.3133 0.786552 13.8867L6.91989 7.99333L0.786552 2.09997C0.359885 1.69997 0.359884 1.00665 0.759884 0.579985C1.15988 0.153319 1.85321 0.153358 2.27988 0.553358L9.21321 7.21999C9.42655 7.43333 9.53322 7.7 9.53322 7.99333Z" />
+						</svg>
+					</a>
+				</div>
+				<div class="news__cards">
+					<div class="news__card card-primary">
+						<img src="img/news1.jpg" alt="" class="card-primary__img">
+						<div class="card-primary__content">
+							<h5 class="card-primary__title">
+								Google I / O 2020 news update
+							</h5>
+							<p class="card-primary__text">Out of&nbsp;concern for the health and safety of&nbsp;our
+								developers,
+								employees, and local communities&nbsp;&mdash; and in&nbsp;line with recent ...</p>
+							<div class="card-primary__author card-author">
+								<img src="img/news-author.png" alt="" class="card-author__avatar">
+								<div class="card-author__info">
+									<span class="card-author__name">Sundar Pichai</span>
+									<span class="card-author__speciality">CEO at Google</span>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="news__card card-article">
+						<img src="img/news2.jpg" alt="" class="card-article__img">
+						<div class="card-article__content">
+							<h5 class="card-article__title">Minimal workspace for inspirations</h5>
+							<span class="card-article__author">Anthony Masional</span>
+						</div>
+					</div>
+					<div class="news__card card-article">
+						<img src="img/news3.jpg" alt="" class="card-article__img">
+						<div class="card-article__content">
+							<h5 class="card-article__title">Does productivity increase when working remotely ?</h5>
+							<span class="card-article__author">Frank Martin</span>
+						</div>
+					</div>
+					<div class="news__card card-article">
+						<img src="img/news4.jpg" alt="" class="card-article__img">
+						<div class="card-article__content">
+							<h5 class="card-article__title">Morning routine to boost your mood</h5>
+							<span class="card-article__author">Elizabeth Swan</span>
+						</div>
+					</div>
+					<div class="news__card card-article">
+						<img src="img/news5.jpg" alt="" class="card-article__img">
+						<div class="card-article__content">
+							<h5 class="card-article__title">5+ tips to find comfortable co-working space</h5>
+							<span class="card-article__author">Mykola Ilschenko</span>
+						</div>
+					</div>
 				</div>
-				<div class="news__card card-article">
-					<img src="img/news2.jpg" alt="" class="card-article__img">
-					<h5 class="card-article__title">Minimal workspace for inspirations</h5>
-					<span class="card-article__author card-author__name">Anthony Masional</span>
-				</div>
-				<div class="news__card card-article">
-					<img src="img/news3.jpg" alt="" class="card-article__img">
-					<h5 class="card-article__title">Does productivity increase when working remotely ?</h5>
-					<span class="card-article__author card-author__name">Frank Martin</span>
-				</div>
-				<div class="news__card card-article">
-					<img src="img/news4.jpg" alt="" class="card-article__img">
-					<h5 class="card-article__title">Morning routine to boost your mood</h5>
-					<span class="card-article__author card-author__name">Elizabeth Swan</span>
-				</div>
-				<div class="news__card card-article">
-					<img src="img/news5.jpg" alt="" class="card-article__img">
-					<h5 class="card-article__title">5+ tips to find comfortable co-working space</h5>
-					<span class="card-article__author card-author__name">Mykola Ilschenko</span>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- /.news -->
+			<!-- /.news -->
+
+		</div>
 
 	</main>
 	<!-- /.main -->
@@ -445,11 +521,36 @@
 				<h1 class="about__title">Frispes</h1>
 				<p class="about__text">We&nbsp;offer comfortable spaces, cozy cafe, high-speed internet, spacious
 					parking area and many more for your best workspaces and meetings</p>
-				<div class="about__socials socials">
-					<a href="#" class="socials__link"></a>
-					<a href="#" class="socials__link"></a>
-					<a href="#" class="socials__link"></a>
-				</div>
+				<ul class="about__socials socials">
+					<li class="socials__item">
+						<a href="#" class="socials__link">
+							<svg class="socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M2 12C2 7.80863 2 5.71294 3.05041 4.26718C3.38964 3.80026 3.80026 3.38964 4.26718 3.05041C5.71294 2 7.80863 2 12 2C16.1914 2 18.2871 2 19.7328 3.05041C20.1997 3.38964 20.6104 3.80026 20.9496 4.26718C22 5.71294 22 7.80863 22 12C22 16.1914 22 18.2871 20.9496 19.7328C20.6104 20.1997 20.1997 20.6104 19.7328 20.9496C18.2871 22 16.1914 22 12 22C7.80863 22 5.71294 22 4.26718 20.9496C3.80026 20.6104 3.38964 20.1997 3.05041 19.7328C2 18.2871 2 16.1914 2 12ZM12 6.70588C9.07632 6.70588 6.70588 9.07632 6.70588 12C6.70588 14.9237 9.07632 17.2941 12 17.2941C14.9237 17.2941 17.2941 14.9237 17.2941 12C17.2941 9.07632 14.9237 6.70588 12 6.70588ZM12 15.3088C10.1762 15.3088 8.69118 13.8238 8.69118 12C8.69118 10.1749 10.1762 8.69118 12 8.69118C13.8238 8.69118 15.3088 10.1749 15.3088 12C15.3088 13.8238 13.8238 15.3088 12 15.3088ZM18.3966 6.30883C18.3966 6.69844 18.0808 7.01427 17.6912 7.01427C17.3016 7.01427 16.9857 6.69844 16.9857 6.30883C16.9857 5.91923 17.3016 5.60339 17.6912 5.60339C18.0808 5.60339 18.3966 5.91923 18.3966 6.30883Z" />
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#" class="socials__link">
+							<svg class="socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M21.3903 4.11407C22.4182 4.39093 23.2288 5.20135 23.5055 6.22948C24.0197 8.1074 23.9999 12.0218 23.9999 12.0218C23.9999 12.0218 23.9999 15.9163 23.5057 17.7944C23.2288 18.8223 22.4184 19.6329 21.3903 19.9096C19.5122 20.404 12 20.404 12 20.404C12 20.404 4.50731 20.404 2.60961 19.89C1.58148 19.6131 0.771054 18.8025 0.4942 17.7746C0 15.9163 0 12.002 0 12.002C0 12.002 0 8.1074 0.4942 6.22948C0.770871 5.20153 1.60125 4.37115 2.60943 4.09448C4.48753 3.6001 11.9998 3.6001 11.9998 3.6001C11.9998 3.6001 19.5122 3.6001 21.3903 4.11407ZM15.8549 12.0021L9.60788 15.6001V8.40404L15.8549 12.0021Z">
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#" class="socials__link">
+							<svg class="socials__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.563 1.00458L14.7857 1C11.6655 1 9.64916 3.12509 9.64916 6.41423V8.91055H6.85674C6.61544 8.91055 6.42004 9.1115 6.42004 9.35937V12.9763C6.42004 13.2241 6.61567 13.4249 6.85674 13.4249H9.64916V22.5514C9.64916 22.7993 9.84455 23 10.0859 23H13.7292C13.9705 23 14.1659 22.799 14.1659 22.5514V13.4249H17.4308C17.6721 13.4249 17.8675 13.2241 17.8675 12.9763L17.8689 9.35937C17.8689 9.24036 17.8228 9.12638 17.741 9.04215C17.6592 8.95793 17.5478 8.91055 17.432 8.91055H14.1659V6.79439C14.1659 5.77727 14.4018 5.26094 15.6916 5.26094L17.5625 5.26025C17.8036 5.26025 17.999 5.0593 17.999 4.81166V1.45317C17.999 1.20576 17.8038 1.00504 17.563 1.00458Z" />
+							</svg>
+
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div class="footer__nav nav-footer">
 				<div class="nav-footer__section">

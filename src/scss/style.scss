@@ -145,7 +145,7 @@ section:not(:first-child) {
 	}
 
 	&__slider {
-		width: 100%;
+		margin-top: 33px;
 	}
 
 	.section-title {
@@ -166,17 +166,42 @@ section:not(:first-child) {
 }
 
 .slider-hero {
-	margin-top: 33px;
+	position: relative;
+
+	&__wrapper {
+
+	}
+
+	&__slide {
+
+	}
 	
 	&__img {
-		width: 100%;
-		object-fit: cover;
+		img {
+			width: 100%;
+			height: 566px;
+			object-fit: cover;
+		}
 	}
 
 	&__nav {
+
 	}
 
-	&__dot {
+	.swiper-pagination {
+		margin-bottom: 27px;
+
+		.swiper-pagination-bullet {
+			width: 16px;
+			height: 4px;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 0;
+		}
+
+		.swiper-pagination-bullet-active {
+			width: 40px;
+			background-color: $secondaryColor;
+		}
 	}
 }
 
@@ -204,7 +229,7 @@ section:not(:first-child) {
 	}
 
 	&__slider {
-		width: 100%;
+		margin-top: 64px;
 	}
 }
 
@@ -283,15 +308,28 @@ section:not(:first-child) {
 }
 
 .slider-spaces {
-	margin-top: 64px;
 
 	&__cards {
-		display: flex;
-		column-gap: 30px;
+
+	}
+
+	&__nav {
+		margin: 0 auto;
+		width: 160px;
+		height: 4px;
+		margin-top: 53px;
+
+		.swiper-pagination-progressbar-fill {
+			background-color: $secondaryColor;	
+		}
+	}
+
+	&__progressbar {
+		position: relative;
+		background-color: $greyColor;
 	}
 }
 .card-spaces {
-	flex: 1;
 	height: 468px;
 	position: relative;
 
@@ -412,10 +450,6 @@ section:not(:first-child) {
 }
 
 .nav-slider {
-	display: flex;
-	flex-direction: column;
-	align-items: center;;
-	margin-top: 53px;
 
 	&__dots {
 		display: flex;

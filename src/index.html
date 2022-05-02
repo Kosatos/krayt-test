@@ -5,7 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+
 	<title>Frispes.</title>
 </head>
 
@@ -58,16 +60,30 @@
 					startup, and help grow their opportunities in&nbsp;key local, regional and global markets
 				</p>
 			</div>
-			<div class="hero__slider slider-hero">
-				<img src="/src/img/hero1.jpg" alt="Co-working" class="slider-hero__img">
-				<img src="/src/img/hero2.jpg" alt="Co-working" class="slider-hero__img">
-				<img src="/src/img/hero3.jpg" alt="Co-working" class="slider-hero__img">
-				<img src="/src/img/hero4.jpg" alt="Co-working" class="slider-hero__img">
-				<div class="slider-hero__nav">
-					<div class="slider-hero__dot"></div>
-					<div class="slider-hero__dot"></div>
-					<div class="slider-hero__dot"></div>
-					<div class="slider-hero__dot"></div>
+			<div class="hero__slider slider-hero swiper">
+				<div class="slider-hero__wrapper swiper-wrapper">
+					<div class="slider-hero__slide swiper-slide">
+						<div class="slider-hero__img">
+							<img src="/src/img/hero1.jpg" alt="Co-working">
+						</div>
+					</div>
+					<div class="slider-hero__slide swiper-slide">
+						<div class="slider-hero__img">
+							<img src="/src/img/hero2.jpg" alt="Co-working">
+						</div>
+					</div>
+					<div class="slider-hero__slide swiper-slide">
+						<div class="slider-hero__img">
+							<img src="/src/img/hero3.jpg" alt="Co-working">
+						</div>
+					</div>
+					<div class="slider-hero__slide swiper-slide">
+						<div class="slider-hero__img">
+							<img src="/src/img/hero4.jpg" alt="Co-working">
+						</div>
+					</div>
+				</div>
+				<div class="slider-hero__nav swiper-pagination">
 				</div>
 			</div>
 		</section>
@@ -104,9 +120,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="spaces__slider slider-spaces">
-				<div class="slider-spaces__cards">
-					<div class="card-spaces">
+			<div class="spaces__slider slider-spaces swiper">
+				<div class="slider-spaces__cards swiper-wrapper">
+					<div class="card-spaces swiper-slide">
 						<div class="card-spaces__content main-content">
 							<img src="./img/spaces1.jpg" alt="#" class="card-spaces__img">
 							<h4 class="card-spaces__title">Working with team</h4>
@@ -123,10 +139,10 @@
 						<button class="check-avaibility-btn">Check avaibility</button>
 					</div>
 
-					<div class="card-spaces">
+					<div class="card-spaces swiper-slide">
 						<div class="card-spaces__content main-content">
-							<img src="./img/spaces4.jpg" alt="#" class="card-spaces__img">
-							<h4 class="card-spaces__title">Working with team</h4>
+							<img src="./img/spaces2.jpg" alt="#" class="card-spaces__img">
+							<h4 class="card-spaces__title">Game zone</h4>
 						</div>
 						<div class="card-spaces private-card">
 							<div class="card-spaces__content private-card__content">
@@ -140,7 +156,7 @@
 						<button class="check-avaibility-btn">Check avaibility</button>
 					</div>
 
-					<div class="card-spaces">
+					<div class="card-spaces swiper-slide">
 						<div class="card-spaces__content main-content">
 							<img src="./img/spaces3.jpg" alt="#" class="card-spaces__img">
 							<h4 class="card-spaces__title">Custom Office</h4>
@@ -156,16 +172,34 @@
 						</div>
 						<button class="check-avaibility-btn">Check avaibility</button>
 					</div>
+
+					<div class="card-spaces swiper-slide">
+						<div class="card-spaces__content main-content">
+							<img src="./img/spaces4.jpg" alt="#" class="card-spaces__img">
+							<h4 class="card-spaces__title">Chill zone</h4>
+						</div>
+						<div class="card-spaces private-card">
+							<div class="card-spaces__content private-card__content">
+								<h4 class="private-card__title">Private Space</h4>
+								<p class="card-spaces__text">Comfortable space, Full speed wifi, Free coffe
+									&amp;&nbsp;Snack
+									and many more
+								</p>
+							</div>
+						</div>
+						<button class="check-avaibility-btn">Check avaibility</button>
+					</div>
+
 				</div>
-			</div>
-			<div class="slider-spaces__nav nav-slider">
-				<div class="nav-slider__dots">
-					<div class="nav-slider__dot"></div>
-					<div class="nav-slider__dot"></div>
-					<div class="nav-slider__dot"></div>
-					<div class="nav-slider__dot"></div>
+				<div class="slider-spaces__nav">
+					<div class="slider-spaces__progressbar swiper-pagination"></div>
 				</div>
-				<span class="nav-slider__counter"><b class="nav-slider__current">01 /</b> 04</span>
+				<div class="slider-spaces__fractions">
+					<span class="slider-spaces__current"></span>
+					' / '
+					<span class="slider-spaces__all"></span>
+				</div>
+
 			</div>
 		</section>
 
@@ -625,8 +659,8 @@
 
 	<!-- /.footer -->
 
-	<script src="/src/js/app.js"></script>
-
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="index.js"></script>
 </body>
 
 </html>

@@ -328,6 +328,29 @@ section:not(:first-child) {
 		position: relative;
 		background-color: $greyColor;
 	}
+
+	&__fractions {
+		text-align: center;
+		margin-top: 7px;
+	}
+
+	&__current {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.5em;
+		color: $blackColor;
+	}
+
+	.slash {
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+		color: #0d2c4a;
+	}
+
+	&__all {
+		line-height: 1.6em;
+		color: $greyColor;
+	}
 }
 .card-spaces {
 	height: 468px;
@@ -569,8 +592,18 @@ section:not(:first-child) {
 		column-gap: 88px;
 	}
 
-	&__list {
+	&__nav {
 		width: 293px;		
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+
+		.swiper-slide-thumb-active {
+			background-color: $secondaryColor;
+			color: #fff;
+		}
 	}
 
 	&__item {
@@ -584,11 +617,11 @@ section:not(:first-child) {
 
 		&:hover {
 			color: #fff;
-			background-color: $secondaryColor;
+			background-color: rgba(255, 87, 34, 0.75);
 		}
 	}
 
-	&__images {
+	&__slider {
 		flex: 1;
 	}
 
@@ -596,47 +629,85 @@ section:not(:first-child) {
 		width: 100%;
 		object-fit: cover;
 	}
+
+	.slider-facilities {
+		&__wrapper {
+
+		}
+
+		&__image {
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
 }
+
+
 
 // FRISPES GALLERY //
 
 .gallery {
-		&__header {
-			width: 100%;
-			display: flex;
-			justify-content: end;
+	position: relative;
+	height: 606px;
+	display: flex;
+	align-items: end;
+	&__header {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 100%;
+		display: flex;
+		justify-content: end;
+		z-index: 5;
 
-			.section-title {
-				margin-bottom: 39px;
-			}
+		.section-title {
+			margin-bottom: 39px;
 		}
+	}
 
-		&__slider {
-			display: flex;
-			justify-content: space-between;
-			margin-top: 52px;
-			column-gap: 30px;
-			width: 100%;
-		}
+	&__slider {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
 }
 .header-gallery {
 
-		&__container {
-			max-width: 500px;
-		}
+	&__container {
+		max-width: 500px;
+	}
 }
 
 .slider-gallery {
-		&__card {
-			width: 350px;
-			height: 350px;
+	&__wrapper {
+		display: flex;
+		align-items: end;
+	}
+	&__slide {
+		width: 350px;
+		height: 350px;
+		&.swiper-slide-active {
+			width: 445px;
+			height: 100%;
+		}
+	}
+	&__image {
+		img {
+			width: 100%;
+			height: 100%;
 			object-fit: cover;
 		}
+	}	
 }
 
 // WHO USE //
 
 .whouse {
+	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -656,6 +727,7 @@ section:not(:first-child) {
 		margin: 0 auto;
 		margin-top: 56px;
 		display: flex;
+		justify-content: space-between;
 		flex-wrap: wrap;
 		column-gap: 60px;
 		row-gap: 10px;
@@ -965,7 +1037,8 @@ section:not(:first-child) {
 	background-color: #0D2C4A;
 
 	&__container {
-		padding: 70px 0 90px;
+		padding-top: 70px;
+		padding-bottom: 90px;
 		display: flex;
 		column-gap: 125px;
 		justify-content: space-between;

@@ -101,7 +101,7 @@
 					</p>
 				</div>
 				<div class="spaces__nav slider-controllers">
-					<div class="slider-controllers__arrow arrow arrow-left">
+					<div class="slider-controllers__arrow arrow arrow-left spaces-prev">
 						<span class="arrow__line"></span>
 						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
 								\ />
 						</svg>
 					</div>
-					<div class="slider-controllers__arrow arrow arrow-right">
+					<div class="slider-controllers__arrow arrow arrow-right spaces-next">
 						<span class="arrow__line"></span>
 						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +196,7 @@
 				</div>
 				<div class="slider-spaces__fractions">
 					<span class="slider-spaces__current"></span>
-					' / '
+					<span class="slash"> / </span>
 					<span class="slider-spaces__all"></span>
 				</div>
 
@@ -271,32 +271,55 @@
 				<h3 class="section-title">All facilities are designed to meet all your needs</h3>
 			</div>
 			<div class="facilities__content">
-				<ul class="facilities__list">
-					<li class="facilities__item">
-						Spacious parking area
-					</li>
-					<li class="facilities__item">
-						Comfortable spaces
-					</li>
-					<li class="facilities__item">
-						Cozy cafe
-					</li>
-					<li class="facilities__item">
-						Child playground
-					</li>
-					<li class="facilities__item">
-						Outdoor spaces
-					</li>
-				</ul>
-				<div class="facilities__images">
-					<img src="/src/img/facilities3.jpg" alt="Cozy cafe" class="facilities__img">
+				<div class="facilities__nav swiper">
+					<ul class="facilities__list swiper-wrapper">
+						<li class="facilities__item swiper-slide">
+							Spacious parking area
+						</li>
+						<li class="facilities__item swiper-slide">
+							Comfortable spaces
+						</li>
+						<li class="facilities__item swiper-slide">
+							Cozy cafe
+						</li>
+						<li class="facilities__item swiper-slide">
+							Child playground
+						</li>
+						<li class="facilities__item swiper-slide">
+							Outdoor spaces
+						</li>
+					</ul>
+				</div>
+
+				<div class="facilities__slider slider-facilities swiper">
+
+					<div class="slider-facilities__wrapper swiper-wrapper">
+
+						<div class="slider-facilities__image swiper-slide">
+							<img src="/src/img/facilities1.jpg" alt="Spacious parking area" class="facilities__img">
+						</div>
+						<div class="slider-facilities__image swiper-slide">
+							<img src="/src/img/facilities2.jpg" alt="Comfortable spaces" class="facilities__img">
+						</div>
+						<div class="slider-facilities__image swiper-slide">
+							<img src="/src/img/facilities3.jpg" alt="Cozy cafe" class="facilities__img">
+						</div>
+						<div class="slider-facilities__image swiper-slide">
+							<img src="/src/img/facilities4.jpg" alt="Child playground" class="facilities__img">
+						</div>
+						<div class="slider-facilities__image swiper-slide">
+							<img src="/src/img/facilities5.jpg" alt="Outdoor spaces" class="facilities__img">
+						</div>
+
+					</div>
+
 				</div>
 			</div>
 		</section>
 
 		<!-- /.facilities -->
 
-		<section class="gallary">
+		<section class="gallery">
 			<div class="gallery__header header-gallery container">
 				<div class="header-gallery__container">
 					<h2 class="section-intro">Frispes gallery</h2>
@@ -304,7 +327,7 @@
 						Immersive beautiful<br> co-working space gallery
 					</h3>
 					<div class="gallery__nav slider-controllers">
-						<div class="slider-controllers__arrow arrow arrow-left">
+						<div class="slider-controllers__arrow arrow arrow-left gallery-prev">
 							<span class="arrow__line"></span>
 							<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -313,7 +336,7 @@
 									\ />
 							</svg>
 						</div>
-						<div class="slider-controllers__arrow arrow arrow-right">
+						<div class="slider-controllers__arrow arrow arrow-right gallery-next">
 							<span class="arrow__line"></span>
 							<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -324,11 +347,29 @@
 					</div>
 				</div>
 			</div>
-			<div class="gallery__slider slider-gallery">
-				<img src="img/gallery1.jpg" alt="" class="slider-gallery__card">
-				<img src="img/gallery2.jpg" alt="" class="slider-gallery__card">
-				<img src="img/gallery3.jpg" alt="" class="slider-gallery__card">
-				<img src="img/gallery4.jpg" alt="" class="slider-gallery__card">
+			<div class="gallery__slider slider-gallery swiper">
+				<div class="slider-gallery__wrapper swiper-wrapper container">
+					<div class="slider-gallery__slide swiper-slide">
+						<div class="slider-gallery__image">
+							<img src="img/gallery1.jpg" alt="">
+						</div>
+					</div>
+					<div class="slider-gallery__slide swiper-slide">
+						<div class="slider-gallery__image">
+							<img src="img/gallery2.jpg" alt="">
+						</div>
+					</div>
+					<div class="slider-gallery__slide swiper-slide">
+						<div class="slider-gallery__image">
+							<img src="img/gallery3.jpg" alt="">
+						</div>
+					</div>
+					<div class="slider-gallery__slide swiper-slide">
+						<div class="slider-gallery__image">
+							<img src="img/gallery4.jpg" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 

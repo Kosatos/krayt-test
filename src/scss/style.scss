@@ -22,6 +22,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	color: $primaryColor;
+	overflow-x: hidden;
 }
 
 .container {
@@ -676,10 +677,18 @@ section:not(:first-child) {
 		height: 32px;
 		object-fit: contain;
 		margin-right: 24px;
+		@media (max-width: #{$md4+px}) {
+			width: 20px;
+			height: 20px;
+			margin-right: 14px;
+		}
 	}
 
 	&__content {
 		width: 150px;
+		@media (max-width: #{$md4+px}) {
+			width: 100px;
+		}
 	}
 
 	&__value {
@@ -687,6 +696,9 @@ section:not(:first-child) {
 		font-size: 32px;
 		margin-bottom: 8px;
 		line-height: 1.3em;
+		@media (max-width: #{$md4+px}) {
+			font-size: 20px;
+		}
 	}
 
 	&__title {
@@ -727,6 +739,8 @@ section:not(:first-child) {
 	}
 
 	&__item {
+		display: flex;
+		align-items: center;
 		width: 100%;
 		padding: 24px;
 		font-size: 20px;
@@ -746,13 +760,12 @@ section:not(:first-child) {
 
 		&.swiper-slide-thumb-active:hover {
 			background-color: $secondaryColor;
-		}
+		}	
 
 		@media (max-width: #{$md3+px}) {
-			font-size: 16px;
-			padding: 10px;
-			height: auto;
-			line-height: 28px;
+			font-size: 12px;
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 
@@ -765,6 +778,7 @@ section:not(:first-child) {
 		}
 		@media (max-width: #{$md4+px}) {
 			height: 200px;
+			width: 200px;
 		}
 	}
 
@@ -1210,11 +1224,14 @@ section:not(:first-child) {
 		}
 
 		&__card {
-			max-width: 350px;
+			width: 350px;
 			height: 320px;
 			background-color: #fff;
 			&:hover {
 				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+			}
+			@media (max-width: #{$md3+px}) {
+				max-width: 350px;
 			}
 		}
 }
@@ -1307,20 +1324,42 @@ section:not(:first-child) {
 		padding-top: 70px;
 		padding-bottom: 90px;
 		display: flex;
-		column-gap: 125px;
 		justify-content: space-between;
+
+		
+		@media (max-width: #{$md3+px}) {
+			flex-direction: column;
+		}
 	}
 
 	&__about {
 		max-width: 255px;
+		margin-right: 125px;
+		padding-bottom: 24px;
+		
+		@media (max-width: #{$md1+px}) {
+			margin-right: 65px;
+		}
+		@media (max-width: #{$md3+px}) {
+			max-width: 100%;
+		}
 	}
 
 	&__nav {
 		display: flex;
 		justify-content: space-between;
-		column-gap: 68px;
+		@include adaptiv-value('column-gap', 68, 15, 1);
 		padding-top: 10px;
 		flex: 1;
+
+		@media (max-width: #{$md1+px}) {
+			flex-wrap: wrap;
+			gap: 15px;
+			justify-content: flex-start;
+		}
+		@media (max-width: #{$md3+px}) {
+			justify-content: space-between;
+		}
 	}
 }
 
@@ -1367,6 +1406,10 @@ section:not(:first-child) {
 
 	&__section {
 		max-width: 212px;
+
+		@media (max-width: #{$md1+px}) {
+			width: 150px;
+		}
 	}
 
 	&__title {

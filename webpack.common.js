@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '',
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -32,6 +33,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.(ogg)$/i,
+        use: ['file-loader'],
       },
     ],
   },

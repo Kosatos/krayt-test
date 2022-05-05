@@ -42,6 +42,11 @@
 		<div class="header__controllers">
 			<button class="header__btn log-in-btn" type="button">Log In</button>
 			<button class="header__btn sign-up-btn" type="button">Sign Up</button>
+			<div class="header__burger burger-header">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
 	</header>
 
@@ -319,8 +324,8 @@
 
 		<!-- /.facilities -->
 
-		<section class="gallery">
-			<div class="gallery__header header-gallery container">
+		<section class="gallery container">
+			<div class="gallery__header header-gallery">
 				<div class="header-gallery__container">
 					<h2 class="section-intro">Frispes gallery</h2>
 					<h3 class="section-title">
@@ -347,26 +352,28 @@
 					</div>
 				</div>
 			</div>
-			<div class="gallery__slider slider-gallery swiper">
-				<div class="slider-gallery__wrapper swiper-wrapper container">
-					<div class="slider-gallery__slide swiper-slide">
-						<div class="slider-gallery__image">
-							<img src="img/gallery1.jpg" alt="">
+			<div class="gallery__slider-wrapper">
+				<div class="gallery__slider slider-gallery swiper">
+					<div class="slider-gallery__wrapper swiper-wrapper">
+						<div class="slider-gallery__slide swiper-slide">
+							<div class="slider-gallery__image">
+								<img src="./img/gallery1.jpg" alt="">
+							</div>
 						</div>
-					</div>
-					<div class="slider-gallery__slide swiper-slide">
-						<div class="slider-gallery__image">
-							<img src="img/gallery2.jpg" alt="">
+						<div class="slider-gallery__slide swiper-slide">
+							<div class="slider-gallery__image">
+								<img src="./img/gallery2.jpg" alt="">
+							</div>
 						</div>
-					</div>
-					<div class="slider-gallery__slide swiper-slide">
-						<div class="slider-gallery__image">
-							<img src="img/gallery3.jpg" alt="">
+						<div class="slider-gallery__slide swiper-slide">
+							<div class="slider-gallery__image">
+								<img src="./img/gallery3.jpg" alt="">
+							</div>
 						</div>
-					</div>
-					<div class="slider-gallery__slide swiper-slide">
-						<div class="slider-gallery__image">
-							<img src="img/gallery4.jpg" alt="">
+						<div class="slider-gallery__slide swiper-slide">
+							<div class="slider-gallery__image">
+								<img src="./img/gallery4.jpg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -397,7 +404,7 @@
 			<div class="reviews__header">
 				<h3 class="section-title">What our customers are saying</h3>
 				<div class="reviews__nav slider-controllers">
-					<div class="slider-controllers__arrow arrow arrow-left">
+					<div class="slider-controllers__arrow arrow arrow-left reviews-prev">
 						<span class="arrow__line"></span>
 						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
@@ -406,7 +413,7 @@
 								\ />
 						</svg>
 					</div>
-					<div class="slider-controllers__arrow arrow arrow-right">
+					<div class="slider-controllers__arrow arrow arrow-right reviews-next">
 						<span class="arrow__line"></span>
 						<svg class="arrow__body" width="29" height="27" viewBox="0 0 29 27" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
@@ -416,59 +423,56 @@
 					</div>
 				</div>
 			</div>
-			<div class="reviews__slider slider-reviews">
-				<div class="slider-reviews__cards">
-					<div class="slider-reviews__card card-review">
-						<p class="card-review__text">
-							Our team has been working at&nbsp;frispes for almost 2&nbsp;months because our office
-							still closed. During working at&nbsp;frispes, we&nbsp;feel a&nbsp;new experience,
-							we&nbsp;can feel working with a&nbsp;beautiful, modern, and comfortable space. And cozy
-							cafe with high-speed internet in&nbsp;there. Thank you for frispes and team.
-						</p>
-						<div class="card-review__author card-author">
-							<img src="img/review1.png" alt="" class="card-author__avatar">
-							<div class="card-author__info">
-								<span class="card-author__name">Pedro Ibanez</span>
-								<span class="card-author__speciality">UI Designer at Google</span>
+			<div class="reviews__slider-wrapper">
+				<div class="reviews__slider slider-reviews swiper">
+					<div class="slider-reviews__cards swiper-wrapper">
+						<div class="slider-reviews__card card-review swiper-slide">
+							<p class="card-review__text">
+								Our team has been working at&nbsp;frispes for almost 2&nbsp;months because our office
+								still closed. During working at&nbsp;frispes, we&nbsp;feel a&nbsp;new experience,
+								we&nbsp;can feel working with a&nbsp;beautiful, modern, and comfortable space. And cozy
+								cafe with high-speed internet in&nbsp;there. Thank you for frispes and team.
+							</p>
+							<div class="card-review__author card-author">
+								<img src="img/review1.png" alt="" class="card-author__avatar">
+								<div class="card-author__info">
+									<span class="card-author__name">Pedro Ibanez</span>
+									<span class="card-author__speciality">UI Designer at Google</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="slider-reviews__card card-review">
-						<p class="card-review__text">
-							The high-speed internet at&nbsp;frispes was so&nbsp;amazing. I&nbsp;can get best
-							experience when running video call with my&nbsp;clients. Frispes has spacious and safe
-							parking area, that&rsquo;s what i&nbsp;need because i&nbsp;used to&nbsp;work
-							as&nbsp;freelancer for a&nbsp;long time.
-						</p>
-						<div class="card-review__author card-author">
-							<img src="img/review2.png" alt="" class="card-author__avatar">
-							<div class="card-author__info">
-								<span class="card-author__name">Raymond Thual</span>
-								<span class="card-author__speciality">Professional Freelancer</span>
+						<div class="slider-reviews__card card-review swiper-slide">
+							<p class="card-review__text">
+								The high-speed internet at&nbsp;frispes was so&nbsp;amazing. I&nbsp;can get best
+								experience when running video call with my&nbsp;clients. Frispes has spacious and safe
+								parking area, that&rsquo;s what i&nbsp;need because i&nbsp;used to&nbsp;work
+								as&nbsp;freelancer for a&nbsp;long time.
+							</p>
+							<div class="card-review__author card-author">
+								<img src="img/review2.png" alt="" class="card-author__avatar">
+								<div class="card-author__info">
+									<span class="card-author__name">Raymond Thual</span>
+									<span class="card-author__speciality">Professional Freelancer</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="slider-reviews__card card-review">
-						<p class="card-review__text">
-							Just three words : Frispes is Awesome!
-						</p>
-						<div class="card-review__author card-author">
-							<img src="img/review3.png" alt="" class="card-author__avatar">
-							<div class="card-author__info">
-								<span class="card-author__name">Yuli Berlian</span>
-								<span class="card-author__speciality">IOS Dev at Tokopedia</span>
+						<div class="slider-reviews__card card-review swiper-slide">
+							<p class="card-review__text">
+								Just three words : Frispes is Awesome!
+							</p>
+							<div class="card-review__author card-author">
+								<img src="img/review3.png" alt="" class="card-author__avatar">
+								<div class="card-author__info">
+									<span class="card-author__name">Yuli Berlian</span>
+									<span class="card-author__speciality">IOS Dev at Tokopedia</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="slider-reviews__nav nav-slider">
-					<div class="nav-slider__dots">
-						<div class="nav-slider__dot"></div>
-						<div class="nav-slider__dot"></div>
-						<div class="nav-slider__dot"></div>
-						<div class="nav-slider__dot"></div>
-					</div>
-				</div>
+			</div>
+			<div class="slider-reviews__nav">
+				<div class="slider-reviews__progressbar swiper-pagination"></div>
 			</div>
 		</section>
 

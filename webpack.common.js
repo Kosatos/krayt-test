@@ -38,6 +38,10 @@ module.exports = {
         test: /\.(ogg)$/i,
         use: ['file-loader'],
       },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/i,
+        use: ['file-loader'],
+      },
     ],
   },
   plugins: [

@@ -1,9 +1,8 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+
+// import styles bundle
+import 'swiper/css/bundle';
 
 window.onload = () => {
   // hero slider
@@ -156,8 +155,6 @@ window.onload = () => {
 };
 
 // burger
-
-let opened = false;
 
 let burgerMenu = document.querySelector('.burger-header');
 let menu = document.querySelector('.nav-header__list');

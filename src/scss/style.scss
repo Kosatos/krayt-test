@@ -764,9 +764,9 @@ section:not(:first-child) {
 		}	
 
 		@media (max-width: #{$md3+px}) {
-			font-size: 12px;
-			padding-top: 0;
-			padding-bottom: 0;
+			font-size: 16px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 	}
 

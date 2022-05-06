@@ -191,6 +191,7 @@ section:not(:first-child) {
 	@media (max-width: #{$md1+px}) {
 		@include adaptiv-value('margin-top', 112, 50, 1);
 	}
+	
 }
 
 .section-intro {

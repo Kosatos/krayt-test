@@ -387,8 +387,8 @@ section:not(:first-child) {
 
 @media (max-width: 1152px) and (max-width: 1140px) {
   section:not(:first-child) {
-    margin-top: -webkit-calc(56px + 56 * ((100vw - 320px) / 820));
-    margin-top: calc(56px + 56 * ((100vw - 320px) / 820));
+    margin-top: -webkit-calc(50px + 62 * ((100vw - 320px) / 820));
+    margin-top: calc(50px + 62 * ((100vw - 320px) / 820));
   }
 }
 

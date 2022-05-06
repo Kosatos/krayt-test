@@ -189,7 +189,7 @@ section:not(:first-child) {
 	margin-top: 112px;
 
 	@media (max-width: #{$md1+px}) {
-		@include adaptiv-value('margin-top', 112, 56, 1);
+		@include adaptiv-value('margin-top', 112, 50, 1);
 	}
 }
 

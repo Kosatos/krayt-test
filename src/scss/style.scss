@@ -22,13 +22,13 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	color: $primaryColor;
-	overflow-x: hidden;
 }
 
 .container {
 	max-width: $maxWidthContainer + px;
 	padding: 0 15px;
 	margin: 0 auto;
+
 	@media (max-width: #{$md1+px}) {
 		max-width: 970px;
 	}
